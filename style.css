@@ -1,0 +1,92 @@
+/* NAV SECTION*/
+
+nav {
+  background-color: #677555;
+}
+
+nav p {
+  color: #fff;
+  padding-top: 10px;
+  padding-left: 40px;
+  font: 40px 'Dorsa', sans-serif;
+}
+
+nav ul {
+  float: right;
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+nav a {
+  color: white;
+}
+
+nav a:hover {
+  color: gray;
+}
+ 
+
+/* HEADER SECTION */
+header {
+  background-image: url("https://static1.squarespace.com/static/58090c87d1758ec5d1815f6f/581b3977ebbd1ac01c3d94ea/581c88f5f7e0ab33f71f54bf/1478265882183/pexels-photo-113850.jpeg?format=1500w");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  text-align: center;
+}
+
+.page-head {
+  font-weight: bold;
+  color: inherit;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fff;
+}
+
+header h1 {
+  text-shadow: 3px 2px #677555;
+  color: white !important;
+  font-weight: bold;
+}
+
+header h3 {
+  color: #fff !important;
+  text-shadow: 2px 1px #677555;
+  font-weight: bold;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+
+/* ABOUT SECTION */
+.about {
+  border-radius: 5px;
+  background-color: #9aa888;
+  padding: 15px 15px 15px 30px;
+}
+
+.about-me {
+  font-size: 1.25em;
+}
+
+
+/* PORTFOLIO SECTION */
+.portfolio {
+  border-radius: 5px;
+  background-color: #9aa888;
+  padding: 15px;
+}
+
+.img-thumbnail {
+  border: none;
+}
+
+.portfolio figcaption {
+  font-size: 1.15em;
+}
+
+.contact img {
+  height: 30px;
+}
