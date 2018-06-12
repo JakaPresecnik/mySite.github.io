@@ -112,6 +112,7 @@ spam {
   position: relative;
   cursor: default;
   float: right;
+  font-weight: normal;
 }
 .reveal {
   float: left;
