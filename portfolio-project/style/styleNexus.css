@@ -1,0 +1,10 @@
+.logo {
+  flex: 1;
+  order: 1;
+  max-width: 150px;
+  display: inline;
+}
+.person {
+  order: 2;
+  flex: 4;
+}

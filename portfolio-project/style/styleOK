@@ -1,0 +1,47 @@
+.container, div, header, section{
+  border: 0px ;
+}
+img{
+  width: 100%;
+}
+body {
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+/*HEADER*/
+header {
+  width: 100%;
+}
+header img {
+  display: none;
+}
+.person {
+  text-align: right;
+  width: 100%;
+}
+/*LOGOIMAGE*/
+.logoimage{
+  width: 100%;
+}
+
+/*CONTENT*/
+.content {
+  width: 100%;
+}
+.featured {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.link {
+  text-align: center;
+}
+figure {
+  width: 200px;
+}
+.link p {
+  font-size: 14px;
+}

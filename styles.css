@@ -1,0 +1,121 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  background: #999 url("images/calgary.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+header {
+  position: fixed;
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: 60px;
+  top: 0px;
+  left: 0px;
+  padding-left: 30px;
+  z-index: 2;
+}
+header h1 {
+  font-size: 35px;
+  margin: 10px;
+}
+.content {
+  position: relative;
+  top: 60px;
+  z-index: 1;
+}
+.boxes {
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 30px;
+  padding: 2px 15px 30px 15px;
+  font-size: 24px;
+}
+.introduction {
+  text-align: center;
+  line-height: 1.6;
+}
+.courses {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0px 5px;
+}
+.nanodegree {
+  width: 100%;
+  min-width: 300px;
+  margin: 5px;
+}
+.nanodegree img {
+  display: block;
+  margin: 10px auto;
+  width: 30%;
+  min-width: 200px;
+  border-radius: 5px;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.certificate {
+  max-width: 350px;
+  min-width: 95px;
+  margin: 5px;
+}
+.certificate img {
+  display: block;
+  margin: 10px auto;
+  width: 80%;
+  border-radius: 5px;
+}
+.project {
+  max-width: 350px;
+  min-width: 100px;
+}
+.project img {
+  display: block;
+  margin: 10px auto;
+  width: 50%;
+  border-radius: 5px;
+}
+footer {
+  font-style: italic;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  margin-left: -10px;
+  margin-right: -10px;
+  top: 60px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+.nanodegree:hover, .certificate:hover, .project:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+/* Nanodegree hidden and javascript classes */
+spam {
+  display: block;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 28px;
+  border-bottom: 2px solid black;
+  margin-bottom: -15px;
+}
+.nanodegree figcaption {
+  font-size: 1em;
+  line-height: 1.6;
+  padding: 0px 10px;
+  position: relative;
+  cursor: default;
+  float: right;
+}
+.reveal {
+  float: left;
+}
+.hidden {
+  display: none;
+}

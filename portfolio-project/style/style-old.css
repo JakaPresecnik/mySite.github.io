@@ -1,0 +1,179 @@
+
+img{
+  width: 100%;
+}
+body {
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+/*HEADER*/
+header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  border-bottom: 5px solid #7d97ad;
+}
+.logo {
+  order: 1;
+  max-width: 150px;
+  display: inline;
+}
+.person {
+  order: 2;
+  text-align: right;
+  flex-basis: 100%;
+  color: #2d3c49;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 100;
+  margin: 0px;
+}
+h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 300;
+  margin: -15px 0px 15px 0px;
+}
+/*LOGOIMAGE*/
+.logoimage{
+  flex: 100%;
+  padding-top: 20px;
+}
+/*CONTENT*/
+.content {
+  flex: 100%;
+}
+h3 {
+  color: #7d97ad;
+  font-size: 25px;
+  font-weight: 200;
+  margin: 10px auto -35px auto;
+}
+.featured {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #2d3c49;
+  justify-content: space-evenly;
+}
+.link {
+  text-align: center;
+  max-width: 270px;
+}
+figure {
+  width: 100%;
+  font-size: 30px;
+  margin: 40px auto 3px auto;
+}
+.link p {
+  margin: -10px;
+  font-size: 12px;
+}
+
+
+/*LINK STYLING*/
+a {
+  text-decoration: none;
+  color: #2d3c49;
+}
+a:hover{color: #02b3e4;}
+a:active {color:#7d97ad;}
+a:visited {color:#02b3e4;}
+
+.link:hover{
+  background-color: #dfecfe;
+  border-radius: 20px;
+  opacity: 0.6;
+  filter: alpha(opacity=20)
+}
+
+/*RESPONSIVE DESIGN SECTION */
+
+/* NEXUS 5*/
+@media screen and (min-width: 410px){
+  .logo {
+    order: 1;
+    max-width: 150px;
+    display: inline;
+  }
+  .person {
+    order: 2;
+    flex: 4;
+  }
+}
+
+/* iPAD */
+@media screen and (min-width: 559px){
+  .person h1 {
+    font-weight: 200;
+  }
+  .person h2 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .person h3 {
+    font-size: 30px;
+    font-weight: 300;
+  }
+  .link p {
+    font-size: 14px;
+  }
+}
+
+/* SMALL SCREEN */
+@media screen and (min-width: 827px){
+  .featured {
+    justify-content: space-between;
+  }
+  .person h1 {
+    font-size: 50px;
+    font-weight: 300;
+  }
+  .person h2 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+}
+
+/* MEDIUM SCREEN */
+@media screen and (min-width:860px){
+  .container{
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sunflower{
+    flex: 1;
+    margin-left: 17px;
+    margin-right: 17px;
+  }
+  .appify{
+    flex: 1;
+  }
+  .bokeh{
+    flex: 1;
+  }
+  .link{
+    max-width: 400px;
+  }
+  .person h1 {
+    font-size: 55px;
+    font-weight: 300;
+  }
+  .person h2 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  h3 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .link p {
+    font-size: 16px;
+  }
+}

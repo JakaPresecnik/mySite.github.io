@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Fresh Tomatoes!</title>
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <style type="text/css" media="screen">
+        body {
+            background-color: black;
+            background-image: url("img/cinema-canvas.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto 100%; 
+        }
+        #trailer .modal-dialog {
+            margin-top: 200px;
+            width: 640px;
+            height: 480px;
+        }
+        .hanging-close {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            z-index: 9001;
+        }
+        #trailer-video {
+            width: 100%;
+            height: 100%;
+        }
+        .movie-tile {
+            margin-bottom: 20px;
+            padding-top: 20px;
+            color: #aaa;
+        }
+        .movie-tile:hover {
+            background-color: #00000d;
+            z-index: 1;
+            cursor: pointer;
+            opacity: 0.9;
+            filter: alpha(opacity=90) /*For IE*/
+        }
+        .scale-media {
+            padding-bottom: 56.25%;
+            position: relative;
+        }
+        .scale-media iframe {
+            border: none;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            background-color: white;
+        }
+        .header {
+            margin: 10px 0px;
+            font-family: "Helvetica", "Arial", sans-serif;
+            text-align: center;
+            color: white;
+            background-color: black;
+            letter-spacing: 0.6em;
+            text-transform: uppercase;
+            opacity: 0.8;
+            filter: alpha(opacity=80) /*For IE*/
+            }
+        h1 {
+            padding: 5px;
+        }
+        h4 {
+            color: #222;
+            font-weight: bold;
+        }
+        .spawn {
+            display: none;
+            position: absolute;
+            left: 0px;
+            padding: 10px;
+            background-color: #070c4c;
+        }
+        .movie-tile:hover .spawn{
+            display: block;
+        }
+        .larger {
+            font-size: 16px;
+            border-bottom: 1px solid white;
+            margin-bottom: 3px;
+        }
+        .footer {
+          font-family: "Helvetica", "Arial", sans-serif;
+          margin: 10px 0px 40px 0px;
+          padding: 40px;
+          text-align: center;
+          color: white;
+          background-color: black;
+          opacity: 0.8;
+          filter: alpha(opacity=80) /*For IE*/
+        }
+    </style>
+    <script type="text/javascript" charset="utf-8">
+        // Pause the video when the modal is closed
+        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
+            // Remove the src so the player itself gets removed, as this is the only
+            // reliable way to ensure the video stops playing in IE
+            $("#trailer-video-container").empty();
+        });
+        // Start playing the video whenever the trailer modal is opened
+        $(document).on('click', '.movie-tile', function (event) {
+            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
+            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
+              'id': 'trailer-video',
+              'type': 'text-html',
+              'src': sourceUrl,
+              'frameborder': 0
+            }));
+        });
+        
+        // Animate in the movies when the page loads
+        $(document).ready(function () {
+          $('.movie-tile').hide().first().show("fast", function showNext() {
+            $(this).next("div").show("fast", showNext);
+          });
+        });
+    </script>
+</head>
+
+  <body>
+    <!-- Trailer Video Modal -->
+    <div class="modal" id="trailer">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+          </a>
+          <div class="scale-media" id="trailer-video-container">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header">
+        <h1>Fresh Tomatoes Movie Trailers</h1>
+    </div>
+
+    <!-- Main Page Content -->
+    <div class="container">
+      <div role="navigation">
+      </div>
+    </div>
+    <div class="container">
+      
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="_XgQA9Ab0Gw" data-toggle="modal" data-target="#trailer">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/51v5ZpFyaFL.jpg" width="220" height="342">
+    <h2>Fight Club</h2>
+    <h4>1999</h4>
+    <div class="spawn">
+        <div class="larger">
+            <p><strong>Director: </strong>David Fincher</p>
+            <p><strong>Writer: </strong> Chuck Palahniuk (novel), Jim Uhls (screenplay)</p>
+        </div>
+        <p>'An insomniac office worker, looking for a way to change his life, crosses paths with a devil-may-care soapmaker, forming an underground fight club that evolves into something much, much more.'</p>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="bzLn8sYeM9o" data-toggle="modal" data-target="#trailer">
+    <img src="https://ia.media-imdb.com/images/M/MV5BZjZlZDlkYTktMmU1My00ZDBiLWFlNjEtYTBhNjVhOTM4ZjJjXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" width="220" height="342">
+    <h2>Donnie Darko</h2>
+    <h4>2001</h4>
+    <div class="spawn">
+        <div class="larger">
+            <p><strong>Director: </strong>Richard Kelly</p>
+            <p><strong>Writer: </strong>Richard Kelly</p>
+        </div>
+        <p>'A troubled teenager is plagued by visions of a man in a large rabbit suit who manipulates him to commit a series of crimes, after he narrowly escapes a bizarre accident.'</p>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="h6hZkvrFIj0" data-toggle="modal" data-target="#trailer">
+    <img src="https://ia.media-imdb.com/images/M/MV5BMTAyN2JmZmEtNjAyMy00NzYwLThmY2MtYWQ3OGNhNjExMmM4XkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SY1000_CR0,0,666,1000_AL_.jpg" width="220" height="342">
+    <h2>Lock, Stock and Two Smoking Barrels</h2>
+    <h4>1998</h4>
+    <div class="spawn">
+        <div class="larger">
+            <p><strong>Director: </strong>Guy Ritchie</p>
+            <p><strong>Writer: </strong>Guy Ritchie</p>
+        </div>
+        <p>'A botched card game in London triggers four friends, thugs, weed-growers, hard gangsters, loan sharks and debt collectors to collide with each other in a series of unexpected events, all for the sake of weed, cash and two antique shotguns.'</p>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="8rvYrVTnSWw" data-toggle="modal" data-target="#trailer">
+    <img src="https://ia.media-imdb.com/images/M/MV5BMjg0NjAxNDY4MV5BMl5BanBnXkFtZTcwODA5MjMzMw@@._V1_SY1000_CR0,0,670,1000_AL_.jpg" width="220" height="342">
+    <h2>Crank</h2>
+    <h4>2006</h4>
+    <div class="spawn">
+        <div class="larger">
+            <p><strong>Director: </strong>Mark Neveldine and Brian Taylor</p>
+            <p><strong>Writer: </strong>Mark Neveldine and Brian Taylor</p>
+        </div>
+        <p>'Professional assassin Chev Chelios learns his rival has injected him with a poison that will kill him if his heart rate drops.'</p>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="15s4Y9ffW_o" data-toggle="modal" data-target="#trailer">
+    <img src="https://ia.media-imdb.com/images/M/MV5BN2Y2OWU4MWMtNmIyMy00YzMyLWI0Y2ItMTcyZDc3MTdmZDU4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,671,1000_AL_.jpg" width="220" height="342">
+    <h2>Twelve Monkeys</h2>
+    <h4>1995</h4>
+    <div class="spawn">
+        <div class="larger">
+            <p><strong>Director: </strong>Terry Gilliam</p>
+            <p><strong>Writer: </strong>Chris Marker (film La Jetee), David Webb Peoples (screenplay)</p>
+        </div>
+        <p>'In a future world devastated by disease, a convict is sent back in time to gather information about the man-made virus that wiped out most of the human population on the planet.'</p>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="ni4tEtuTccc" data-toggle="modal" data-target="#trailer">
+    <img src="https://ia.media-imdb.com/images/M/MV5BMTA2NDYxOGYtYjU1Mi00Y2QzLTgxMTQtMWI1MGI0ZGQ5MmU4XkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SY1000_SX684_AL_.jpg" width="220" height="342">
+    <h2>Snatch</h2>
+    <h4>2000</h4>
+    <div class="spawn">
+        <div class="larger">
+            <p><strong>Director: </strong>Guy Ritchie</p>
+            <p><strong>Writer: </strong>Guy Ritchie</p>
+        </div>
+        <p>'Unscrupulous boxing promoters, violent bookmakers, a Russian gangster, incompetent amateur robbers, and supposedly Jewish jewelers fight to track down a priceless stolen diamond.'</p>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="SGWvwjZ0eDc" data-toggle="modal" data-target="#trailer">
+    <img src="https://ia.media-imdb.com/images/M/MV5BMTI1MTY2OTIxNV5BMl5BanBnXkFtZTYwNjQ4NjY3._V1_.jpg" width="220" height="342">
+    <h2>The Departed</h2>
+    <h4>2006</h4>
+    <div class="spawn">
+        <div class="larger">
+            <p><strong>Director: </strong>Martin Scorsese</p>
+            <p><strong>Writer: </strong>William Monahan</p>
+        </div>
+        <p>'An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.'</p>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="oiXdPolca5w" data-toggle="modal" data-target="#trailer">
+    <img src="https://ia.media-imdb.com/images/M/MV5BYTViNjMyNmUtNDFkNC00ZDRlLThmMDUtZDU2YWE4NGI2ZjVmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,670,1000_AL_.jpg" width="220" height="342">
+    <h2>The Usual Suspects</h2>
+    <h4>1995</h4>
+    <div class="spawn">
+        <div class="larger">
+            <p><strong>Director: </strong>Bryan Singer</p>
+            <p><strong>Writer: </strong>Christopher McQuarrie</p>
+        </div>
+        <p>'A sole survivor tells of the twisty events leading up to a horrific gun battle on a boat, which began when five criminals met at a seemingly random police lineup.'</p>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="44v8NhVEL5A" data-toggle="modal" data-target="#trailer">
+    <img src="https://ia.media-imdb.com/images/M/MV5BYjc4MjA2ZDgtOGY3YS00NDYzLTlmNTEtYWMxMzcwZjgzYWNjXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" width="220" height="342">
+    <h2>Inside Man</h2>
+    <h4>2006</h4>
+    <div class="spawn">
+        <div class="larger">
+            <p><strong>Director: </strong>Spike Lee</p>
+            <p><strong>Writer: </strong>Russell Gewirtz</p>
+        </div>
+        <p>'A police detective, a bank robber, and a high-power broker enter high-stakes negotiations after the criminal's brilliant heist spirals into a hostage situation.'</p>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="YuOnfQd-aTw" data-toggle="modal" data-target="#trailer">
+    <img src="https://ia.media-imdb.com/images/M/MV5BMjM2YWM5NmQtZTA1Yi00OGUzLTllNTQtMDJiZTcwYTlhZjkyL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,610,1000_AL_.jpg" width="220" height="342">
+    <h2>Stalker</h2>
+    <h4>1979</h4>
+    <div class="spawn">
+        <div class="larger">
+            <p><strong>Director: </strong>Andrei Tarkovsky</p>
+            <p><strong>Writer: </strong>Andrei Tarkovsky</p>
+        </div>
+        <p>'A guide leads two men through an area known as the Zone to find a room that grants wishes.'</p>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="5jaI1XOB-bs" data-toggle="modal" data-target="#trailer">
+    <img src="https://ia.media-imdb.com/images/M/MV5BNzY2NzI4OTE5MF5BMl5BanBnXkFtZTcwMjMyNDY4Mw@@._V1_SY1000_CR0,0,674,1000_AL_.jpg" width="220" height="342">
+    <h2>Black Swan</h2>
+    <h4>2010</h4>
+    <div class="spawn">
+        <div class="larger">
+            <p><strong>Director: </strong>Darren Aronofsky</p>
+            <p><strong>Writer: </strong>Mark Heyman, Andres Heinz, John J. McLaughlin</p>
+        </div>
+        <p>A' committed dancer wins the lead role in a production of Tchaikovsky's "Swan Lake" only to find herself struggling to maintain her sanity.'</p>
+    </div>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="YDGldPitxic" data-toggle="modal" data-target="#trailer">
+    <img src="https://ia.media-imdb.com/images/M/MV5BYzhiNDkyNzktNTZmYS00ZTBkLTk2MDAtM2U0YjU1MzgxZjgzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SY1000_CR0,0,675,1000_AL_.jpg" width="220" height="342">
+    <h2>Shutter Island</h2>
+    <h4>2010</h4>
+    <div class="spawn">
+        <div class="larger">
+            <p><strong>Director: </strong>Martin Scorsese</p>
+            <p><strong>Writer: </strong>Laeta Kalogridis (screenplay), Dennis Lehane (novel)</p>
+        </div>
+        <p>'In 1954, a U.S. Marshal investigates the disappearance of a murderer, who escaped from a hospital for the criminally insane.'</p>
+    </div>
+</div>
+
+    </div>
+    <div class="footer">
+      <p>created by <strong>Jaka Presecnik</strong>,</p>
+      <p>as part of <strong>Udacity</strong>'s <strong>Intro to Programming nanodegree</strong></p>
+    </div>
+  </body>
+</html>
