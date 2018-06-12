@@ -51,7 +51,7 @@ header h1 {
   display: block;
   margin: 10px auto;
   width: 30%;
-  min-width: 320px;
+  min-width: 430px;
   border-radius: 5px;
 }
 .grid {
@@ -60,14 +60,15 @@ header h1 {
   justify-content: space-between;
 }
 .certificate {
-  max-width: 350px;
-  min-width: 95px;
-  margin: 5px;
+  align-items: center;
+  max-width: 340px;
+  min-width: 100px;
+  margin: 5px 0px;
 }
 .certificate img {
   display: block;
-  margin: 10px auto;
-  width: 80%;
+  margin: 10px auto 10px auto;
+  width: 100%;
   border-radius: 5px;
 }
 .project {
@@ -102,7 +103,7 @@ a {
 spam {
   display: block;
   font-family: 'Ubuntu Mono', monospace;
-  font-size: 28px;
+  font-size: 1.3em;
   border-bottom: 2px solid black;
   margin-bottom: -15px;
 }
@@ -121,14 +122,40 @@ spam {
 .hidden {
   display: none;
 }
+/* Certificates */
+.certificate p {
+  font-size: 0.80em;
+  padding: 0px 20px 5px 20px;
+  line-height: 1.4;
+}
+.certificate spam {
+font-size: 1.3em;
+}
+.box_small_bottom {
+  padding-bottom: 0px;
+}
 @media screen and (max-width:1510px) {
   .nanodegree figcaption {
     width: 55%;
+  }
+  .certificate {
+    max-width: 500px;
+  }
+  .certificate img {
+    width: 90%;
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width:1220px) {
   .nanodegree figcaption {
     width: 45%;
+  }
+  .certificate {
+    width: 45%;
+    mix-width: : 320px;
+  }
+  .certificate img{
+    width: 100%;
   }
 }
 @media screen and (max-width:1030px) {
@@ -145,6 +172,8 @@ spam {
   }
   .reveal {
     float: none;
+
+
   }
   header {
     font-size: 20px;
