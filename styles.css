@@ -61,14 +61,17 @@ header h1 {
 }
 .certificate {
   align-items: center;
-  max-width: 340px;
-  min-width: 100px;
-  margin: 5px 0px;
+  min-width: 600px;
+  margin: 5px auto;
 }
 .certificate img {
   display: block;
   margin: 10px auto 10px auto;
+  padding-left: 5px;
+  padding-right: 5px;
   width: 100%;
+  max-width: 450px;
+  min-width: 440px;
   border-radius: 5px;
 }
 .project {
@@ -129,7 +132,7 @@ spam {
   line-height: 1.4;
 }
 .certificate spam {
-font-size: 1.3em;
+  font-size: 1.3em;
 }
 .box_small_bottom {
   padding-bottom: 0px;
@@ -179,3 +182,4 @@ font-size: 1.3em;
     font-size: 20px;
     height: 70px;
 }
+
