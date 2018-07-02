@@ -81,7 +81,7 @@ header h1 {
 .project img {
   display: block;
   margin: 10px auto;
-  width: 50%;
+  width: 100%;
   border-radius: 5px;
 }
 footer {
@@ -182,4 +182,3 @@ spam {
     font-size: 20px;
     height: 70px;
 }
-
