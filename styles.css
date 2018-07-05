@@ -2,7 +2,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 body {
-  background: #999 url("images/calgary.jpg") no-repeat fixed center;
+  background: #999 url("images/calgary.jpg") no-repeat fixed center center;
   background-size: cover;
 }
 header {
