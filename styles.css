@@ -6,7 +6,7 @@ body {
   background-size: cover;
 }
 header {
-  font-size: 15px;
+  font-size: 1em;
   position: fixed;
   color: white;
   background-color: black;
