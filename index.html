@@ -1,93 +1,166 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>Jaka Presecnik page</title>
-	<link href="styles.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Jaka Presecnik page</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <h1>Jaka Presečnik</h1>
-  </header>
-  <div class="content">
-    <div class="introduction boxes">
-      <p>Hi! Welcome to my page!<br />I am traveling around Canada and learning programing when I'm bored.<br />Will try to leave a hint where I'm at the moment on my background. :)</p>
-			<p>The page is not fully done and responsive yet :)</p>
+    <header>
+        <h1>Jaka Presečnik</h1>
+    </header>
+    <div class="content">
+        <div class="introduction">
+            <p>Hi! Welcome to my page!
+                <br />I am traveling around Canada and learning programing when I'm bored.
+                <br />Will try to leave a hint where I'm at the moment on my background. :)</p>
+            <p>The site is not completed yet. Haven't made my mind if I want the flip on hover or not :)</p>
+        </div>
+        <section class="boxes cert">
+            <p>Courses I completed for now:</p>
+            <div class="courses">
+                <p>Nanodegrees:</p>
+                <div class="grid">
+                    <div class="nanodegree">
+                        <div class="card-like">
+                            <div class="front">
+                                <img src="images/IPND.jpg" alt="Udacity's Intro to Programming nanodegree" />
+                            </div>
+                            <div class="back">
+                                <p>March 2018 - June 2018</p>
+                                <h3>INTRO TO PROGRAMMING</h3>
+                                <p>Link to official school certificate: <a href="https://confirm.udacity.com/GZ5FS7AC">Udacity</a></p>
+                                <p>In this course I learned a lot about Python language. I already knew HTML and CSS and a huge chunk of JavaScript. But this course helped me get more knowladge about all this languages.</p>
+                                <p> Some project I made for this program can be find further down in the project section</p>
+                                <p>I definitely recomend this course for anyone who is interested in programming.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="courses">
+                <p>Individual languages certificates:</p>
+                <div class="grid">
+                    <div class="certificate">
+                        <div class="card-like">
+                            <div class="front">
+                                <img src="images/html_certificate.jpg" alt="Sololearn HTML certificate" />
+                            </div>
+                            <div class="back">
+                                <h3>HTML FUNDAMENTALS</h3>
+                                <p>Link to my SoloLearn profile: <a href="https://www.sololearn.com/Profile/26490#"> SoloLearn</a></p>
+                                <p>I started with this mobile app a long time ago. When there were still video tutorials in. Lucky days :)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certificate">
+                        <div class="card-like">
+                            <div class="front">
+                                <img src="images/css_certificate.jpg" alt="Sololearn CSS certificate" />
+                            </div>
+                            <div class="back">
+                                <h3>CSS FUNDAMENTALS</h3>
+                                <p> Link to my SoloLearn profile: <a href="https://www.sololearn.com/Profile/26490#"> SoloLearn</a></p>
+                                <p>This courses aren't good as they were, but there are some chalanges, that helps you brushing the skills.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certificate">
+                        <div class="card-like">
+                            <div class="front">
+                                <img src="images/js_certificate.jpg" alt="Sololearn JavaScript certificate" />
+                            </div>
+                            <div class="back">
+                                <h3>JAVASCRIPT TUTORIAL</h3>
+                                <p>Link to my SoloLearn profile: <a href="https://www.sololearn.com/Profile/26490#"> SoloLearn</a></p>
+                                <p>JavaScript course here was pretty helpfull. I still use it for some references if I get stuck.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certificate">
+                        <div class="card-like">
+                            <div class="front">
+                                <img src="images/jquery_certificate.jpg" alt="Sololearn jQuery certificate" />
+                            </div>
+                            <div class="back">
+                                <h3>JQUERY TUTORIAL</h3>
+                                <p>Link to my SoloLearn profile: <a href="https://www.sololearn.com/Profile/26490#"> SoloLearn</a></p>
+                                <p>I wasn't really fond on libraries, but when i figured out how jQuerry works I changed my mind :)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="boxes proj">
+            <p>Some of my projects live:</p>
+            <div class="grid">
+                <div class="project">
+                    <div class="card-like">
+                        <div class="front">
+                            <img src="images/arcade_game.jpg" alt="Screenshot of Arade game clone" />
+                        </div>
+                        <div class="back">
+                            <p class="tech-used"> <span>JavaScript</span> <span>OOP</span> <span>HTML canvas</span> </p>
+                            <p>This was a project for Udacity's Front-end developer nanodegree. The project was provided with a pre-existing <a href="https://github.com/udacity/frontend-nanodegree-arcade-game">starter pack</a>. </p>
+                            <p>The purpose of this project was to practice object oriented programming.</p>
+                            <p>To play the game use keyboard arrows to move character. <a href="arcade_game/index.html"><span class="play">PLAY</span></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="card-like">
+                        <div class="front">
+                            <img src="images/memory_game.jpg" alt="Screenshot of a memory game" />
+                        </div>
+                        <div class="back">
+                            <p class="tech-used"> <span>JavaScript</span> <span>CSS</span></p>
+                            <p>This was a project for Udacity's Front-end developer nanodegree. The project was provided with a pre-existing <a href="https://github.com/udacity/fend-project-memory-game">starter pack</a>. </p>
+                            <p>Built a complete browser-based card matching game (also known as Concentration).</p>
+                            <p>Click on cards to reveal them. <a href="memory_game/index.html"><span class="play">PLAY</span></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="card-like">
+                        <div class="front">
+                            <img src="images/movie_trailers.jpg" alt="Screenshot of a movie trailer website" />
+                        </div>
+                        <div class="back">
+                            <p class="tech-used"> <span>Python</span> <span>OOP</span> <span>JavaScript</span> <span>CSS</span></p>
+                            <p>This was a project for Udacity's Intro to Programming nanodegree. </p>
+                            <p>Created a simple movie website with images and trailers, this project demonstrates knowledge of Object Oriented Programming. Made in python so visit my github site for code.</p>
+                            <p><a href="movie_website/fresh_tomatoes.html"><span class="play">OPEN</span></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="card-like">
+                        <div class="front">
+                            <img src="images/pixel_art_maker.jpg" alt="Screenshot of pixel art maker" />
+                        </div>
+                        <div class="back">
+                            <p class="tech-used"> <span>JavaScript</span></p>
+                            <p>This was a project for Udacity's Front-end developer nanodegree. </p>
+                            <p>It is a simple page where you can draw pixel graphics and it demonstrates my knowladge of JavaScript.</p>
+                            <p><a href="pixel-art-maker/index.html"><span class="play">OPEN</span></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    <section class="boxes">
-      <p>Courses I completed for now:</p>
-      <div class="courses">
-        <p>Nanodegrees:</p>
-        <div class="grid">
-          <div class="nanodegree">
-						<figure>
-            	<a href="documents/IPND.pdf"><img src="images/IPND.jpg" alt="Udacity's Intro to Programming nanodegree" /></a>
-							<figcaption class="hidden">March 2018 - June 2018<br/>
-								<spam>INTRO TO PROGRAMMING</spam> <br/>
-								Link to official school certificate:<br/>
-								<a href="https://confirm.udacity.com/GZ5FS7AC">Udacity</a><br/>
-								In this course I learned a lot about Python language. I already knew HTML and CSS and a huge chunk of JavaScript. But this course helped me get more knowladge about all this languages. I 'defo' recomend this course for anyone who is interested in programming.
-							</figcaption>
-						</figure>
-          </div>
-        </div>
-      </div>
-      <div class="courses">
-        <p>Individual languages certificates:</p>
-        <div class="grid">
-          <div class="certificate">
-            <img src="images/html_certificate.jpg" alt="Sololearn HTML certificate" />
-						<p class="hidden"><spam>HTML FUNDAMENTALS</spam> <br /> Link to my SoloLearn profile: <br/>
-						<a href="https://www.sololearn.com/Profile/26490#">SoloLearn</a><br />
-						I started with this mobile app a long time ago. When there were still video tutorials in. Lucky days :)</p>
-          </div>
-          <div class="certificate">
-            <img src="images/css_certificate.jpg" alt="Sololearn CSS certificate" />
-						<p class="hidden"><spam>CSS FUNDAMENTALS</spam><br /> Link to my SoloLearn profile: <br/>
-						<a href="https://www.sololearn.com/Profile/26490#">SoloLearn</a><br />
-						This courses aren't good as they were, but there are some chalanges, that helps you brushing the skills.</p>
-          </div>
-          <div class="certificate">
-            <img src="images/js_certificate.jpg" alt="Sololearn JavaScript certificate" />
-						<p class="hidden"><spam>JAVASCRIPT TUTORIAL</spam><br /> Link to my SoloLearn profile: <br/>
-						<a href="https://www.sololearn.com/Profile/26490#">SoloLearn</a><br />
-						JavaScript course here was pretty helpfull. I still use it for some references if I get stuck.</p>
-          </div>
-          <div class="certificate">
-            <img src="images/jquery_certificate.jpg" alt="Sololearn jQuery certificate" />
-						<p class="hidden"><spam>JQUERY TUTORIAL</spam><br /> Link to my SoloLearn profile: <br/>
-						<a href="https://www.sololearn.com/Profile/26490#">SoloLearn</a><br />
-						I wasn't really fond on libraries, but when i figured out how jQuerry works I changed my mind :)</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="boxes">
-      <p>Some of my projects live:</p>
-      <div class="grid">
-				<a href="arcade_game/index.html"><div class="project">
-          <img src="images/arcade_game.jpg" alt="Screenshot of Arade game clone" />
-        </div></a>
-        <a href="memory_game/index.html"><div class="project">
-          <img src="images/memory_game.jpg" alt="Screenshot of a memory game" />
-        </div></a>
-        <a href="movie_website/fresh_tomatoes.html"><div class="project">
-          <img src="images/movie_trailers.jpg" alt="Screenshot of a movie trailer website" />
-        </div></a>
-        <a href="pixel-art-maker/index.html"><div class="project">
-          <img src="images/pixel_art_maker.jpg" alt="Screenshot of pixel art maker" />
-        </div></a>
-      </div>
-    </section>
-  </div>
-  <footer>
-    <p>Feel free to contact me through mail:</p>
-    <p>jaka.presecnik@gmail.com</p>
-  </footer>
-	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <footer>
+        <p>Feel free to contact me through mail:</p>
+        <p>jaka.presecnik@gmail.com</p>
+    </footer>
+    <!--	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
-	</script>
+</script>-->
 </body>
+
 </html>
