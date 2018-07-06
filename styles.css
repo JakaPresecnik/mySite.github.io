@@ -102,6 +102,7 @@ h3 {
   position: absolute;
   width: 95%;
   height: 95%;
+  background-color: rgba(0, 0, 0, 0.2);
   transform: rotateY( 180deg );
   backface-visibility: hidden;
 }
