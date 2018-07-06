@@ -37,7 +37,7 @@ h3 {
   font-size: 1.5em;
   text-align: center;
   line-height: 1.4;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.4);
   margin: 30px;
   padding: 0.3em;
   width: 100%;
@@ -53,7 +53,6 @@ h3 {
   min-width: 500px;
 }
 .courses {
-  font-weight: bold;
   padding: 10px;
   margin: 0px 5px;
 }
