@@ -154,6 +154,7 @@ h3 {
   border-radius: 5px;
 }
 footer {
+  display: flex;
   font-style: italic;
   padding: 5px;
   text-align: center;
@@ -163,6 +164,17 @@ footer {
   top: 60px;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
+}
+#other {
+  width: 10%;
+}
+#mail {
+  margin: auto;
+}
+#links {
+  margin: 25px 25px;
+  width: 10%
+  float: right;
 }
 
 a {
