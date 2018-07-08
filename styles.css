@@ -7,7 +7,7 @@ body {
 }
 header {
   display: flex;
-  font-size: 1em;
+  font-size: 0,8em;
   position: fixed;
   color: white;
   background-color: black;
